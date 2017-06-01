@@ -1,20 +1,17 @@
 $(document).ready(function() {
-  $("button#platy").click(function() {
+  $("#platy").click(function() {
     $("div.plat").show();
+    $("div.coot").hide();
+    $("div.nar").hide();
   });
-  $("button#coot").click(function() {
+  $("#coot").click(function() {
     $("div.coot").show();
+    $("div.plat").hide();
+    $("div.nar").hide();
   });
-  $("button#narwhal").click(function() {
+  $("#narwhal").click(function() {
     $("div.nar").show();
-  });
-    $("div.nar").children().click(function() {
-      $(this).remove();
-  });
-  $("div.plat").children().click(function() {
-    $(this).remove();
-  });
-  $("div.coot").children().click(function() {
-    $(this).remove();
+    $("div.coot").hide();
+    $("div.plat").hide();
   });
 });
