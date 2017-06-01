@@ -8,4 +8,13 @@ $(document).ready(function() {
   $("button#narwhal").click(function() {
     $("div.nar").show();
   });
+    $("div.nar").children().click(function() {
+      $(this).remove();
+  });
+  $("div.plat").children().click(function() {
+    $(this).remove();
+  });
+  $("div.coot").children().click(function() {
+    $(this).remove();
+  });
 });
